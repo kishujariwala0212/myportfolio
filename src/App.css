@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'CustomFontRegular'; /* You can choose any name for your font family */
+  src: url('./fonts/Belanosima/Belanosima-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'CustomFontSemibold'; /* You can choose any name for your font family */
+  src: url('./fonts/Belanosima/Belanosima-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'CustomFontRegular2'; /* You can choose any name for your font family */
+  src: url('./fonts/Lato/Lato-Regular.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  backdrop-filter: blur(2px);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile_content_collection > label{
+  font-family: CustomFontRegular;
 }
-
-.App-link {
-  color: #61dafb;
+.profile_content_collection > p{
+  font-family: CustomFontSemibold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile_content_collection > h4{
+  font-family: CustomFontSemibold;
+}
+.brand_title{
+  font-family: CustomFontRegular;
+  font-size: 25px;
+}
+.nav_group{
+  font-family: customFontRegular;
+}
+.page_title{
+  font-family: customFontRegular;
+}
+.page_inner_sub_title{
+  font-family: customFontRegular;
+}
+.page_content .page_content_left .inner_right_content > p{
+  font-family: CustomFontRegular2;
+}
+.page_content_right{
+  position: relative;
+}
+.bg_fe_be{
+  background-image: url('../public/assets/image/front-end&back-end.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.inner_left_content, .inner_right_content{
+  /* border: 2px solid #ccc;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #000; */
 }
